@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_content.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="dist/sweetalert2.js"></script>
+    <link rel="stylesheet" href="dist/sweetalert2.min.css">  
+    <title>โปรแกรม แปลง หน่วย</title>
+</head>
+<body>
+    <nav id="blur2">
+        <a href="index.html" class="back"><i class="fas fa-arrow-left"></i>Back</a>
+        <button class="reset" id="reset"><i class="fas fa-redo-alt"></i>Reset</button>
+        <img src="img/logo3.png" class="logo">
+        <button class="reset howto" id="howto"><i class="fas fa-book"></i>วิธีใช้</button>
+    </nav>
+
+    
+    
+    <h2 class="main_title">โปรแกรม แปลง หน่วย</h2>
+    <div class="container" id="blur">
+        <div class="contentBx">
+            <h3 class="title">หน่วยความยาว</h3>
+            <div class="form">
+                <div class="box">
+                    <input type="number" class="input" id="mile" placeholder="ไมล์">
+                    <button class="convert" id="convertA_1">แปลง</button>
+                    <button class="reconvert" id="reconvertA_1"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="kilometer" placeholder="กิโลเมตร">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="kilometer2" placeholder="กิโลเมตร">
+                    <button class="convert" id="convertA_2">แปลง</button>
+                    <button class="reconvert" id="reconvertA_2"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="metre" placeholder="เมตร">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="metre2" placeholder="เมตร">
+                    <button class="convert" id="convertA_3">แปลง</button>
+                    <button class="reconvert" id="reconvertA_3"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="foot" placeholder="ฟุต">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="foot2" placeholder="ฟุต">
+                    <button class="convert" id="convertA_4">แปลง</button>
+                    <button class="reconvert" id="reconvertA_4"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="inch" placeholder="นิ้ว">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="inch2" placeholder="นิ้ว">
+                    <button class="convert" id="convertA_5">แปลง</button>
+                    <button class="reconvert" id="reconvertA_5"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="centimeter" placeholder="เซนติเมตร">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="centimeter2" placeholder="เซนติเมตร">
+                    <button class="convert" id="convertA_6">แปลง</button>
+                    <button class="reconvert" id="reconvertA_6"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="millimeter" placeholder="มิลลิเมตร">
+                </div>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <h3 class="title">หน่วยปริมาตร</h3>
+            <div class="form">
+                <div class="box">
+                    <input type="number" class="input" id="cubicmeter" placeholder="ลูกบาศก์เมตร">
+                    <button class="convert" id="convertB_1">แปลง</button>
+                    <button class="reconvert" id="reconvertB_1"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="gallon" placeholder="แกลลอน">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="gallon2" placeholder="แกลลอน">
+                    <button class="convert" id="convertB_2">แปลง</button>
+                    <button class="reconvert" id="reconvertB_2"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="liter" placeholder="ลิตร">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="liter2" placeholder="ลิตร">
+                    <button class="convert" id="convertB_3">แปลง</button>
+                    <button class="reconvert" id="reconvertB_3"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="pine" placeholder="ไพน์">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="pine2" placeholder="ไพน์">
+                    <button class="convert" id="convertB_4">แปลง</button>
+                    <button class="reconvert" id="reconvertB_4"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="oz" placeholder="ออนซ์">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="oz2" placeholder="ออนซ์">
+                    <button class="convert" id="convertB_5">แปลง</button>
+                    <button class="reconvert" id="reconvertB_5"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="centiliter" placeholder="เซนติลิตร">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="centiliter2" placeholder="เซนติลิตร">
+                    <button class="convert" id="convertB_6">แปลง</button>
+                    <button class="reconvert" id="reconvertB_6"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="milliliter" placeholder="มิลลิลิตร">
+                </div>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <h3 class="title">หน่วยเวลา</h3>
+            <div class="form">
+                <div class="box">
+                    <input type="number" class="input" id="year" placeholder="ปี">
+                    <button class="convert" id="convertC_1">แปลง</button>
+                    <button class="reconvert" id="reconvertC_1"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="month" placeholder="เดือน">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="month2" placeholder="เดือน">
+                    <button class="convert" id="convertC_2">แปลง</button>
+                    <button class="reconvert" id="reconvertC_2"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="week" placeholder="สัปดาห์">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="week2" placeholder="สัปดาห์">
+                    <button class="convert" id="convertC_3">แปลง</button>
+                    <button class="reconvert" id="reconvertC_3"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="day" placeholder="วัน">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="day2" placeholder="วัน">
+                    <button class="convert" id="convertC_4">แปลง</button>
+                    <button class="reconvert" id="reconvertC_4"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="hour" placeholder="ชั่วโมง">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="hour2" placeholder="ชั่วโมง">
+                    <button class="convert" id="convertC_5">แปลง</button>
+                    <button class="reconvert" id="reconvertC_5"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="minute" placeholder="นาที">
+                </div>
+                <div class="box">
+                    <input type="number" class="input" id="minute2" placeholder="นาที">
+                    <button class="convert" id="convertC_6">แปลง</button>
+                    <button class="reconvert" id="reconvertC_6"><i class="fas fa-reply"></i></button>
+                    <input type="number" class="input" id="second" placeholder="วินาที">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup วิธีใช้-->
+    <div class="popup" id="popup">
+        <div class="container">
+            <i class="fas fa-times close" id="close_popup"></i>
+            <h3>วิธีการใช้งาน</h3>
+            <p>1.วิธีที่ 1....... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo magni iure autem minima quam qui ea repudiandae quas nostrum nisi consectetur illum provident omnis aut, saepe modi reiciendis facere nobis, aliquam assumenda. Reprehenderit repudiandae beatae blanditiis in ullam unde voluptate, doloribus libero expedita doloremque cupiditate voluptatum accusamus adipisci consequuntur temporibus facilis laboriosam sit voluptas. Cupiditate magni ad quia saepe est, distinctio nulla at esse temporibus labore similique totam mollitia officia. Nobis totam deleniti non consequatur nisi dolore error ea harum, dolorum illum reprehenderit rem adipisci ut quis tempora commodi. Nihil deserunt illum incidunt in deleniti repudiandae fugit culpa soluta mollitia.</p>
+            <img src="img/ss1.png" class="img">
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+    <script src="convert.js"></script>
+    <script src="button_click.js"></script>
+    
+</body>
+</html>

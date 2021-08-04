@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600&display=swap');
+
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+}
+/* #AF7EEB #969EBE*/
+body {
+    background-color: #E3E9FF;
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    width: 400px;
+    display: block;
+    margin: 100px auto 0;
+    /* border: 1px solid red; */
+    overflow-x: hidden;
+}
+
+.title_main {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 8px 0;
+    color: #Fff;
+    background-color: #AF7EEB;
+}
+    .title_main i {
+        margin-right: 15px;
+        margin-bottom: -6px;
+    }
+
+#input_text {
+    width: 97.5%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 1px 0 1px 10px;
+}
+    #input_text::placeholder {
+        font-size: 18px;
+        color: #a8adc0;
+    }
+
+.btn_new_task {
+    display: block;
+    margin: 10px auto;
+    width: 170px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #AF7EEB;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}   
+    .btn_new_task:hover {
+        box-shadow: 2px 2px 5px 1px #cacaca;
+        background-color: #b88eeb;
+        transform: translateY(-1px);
+    }
+    .btn_new_task i{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+.task_area {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 0px 30px 30px;
+}
+    .task_area li .checked {
+        text-decoration: line-through;
+    }
+    .task_area .task_list_li {
+        padding: 4px 0;
+        /* border: 1px solid red; */
+        color: #5d6583;
+        list-style: none;
+        transition: all 0.3s ease;
+    }
+        .task_area .task_list_li span {
+            position: absolute;
+            right: 50px;
+            color: #969EBE;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .task_area .task_list_li:hover span{
+            opacity: 1;
+            visibility: visible;
+        }
+        .task_area .task_list_li input[type="checkbox"] {
+            margin-right: 13px;
+            transform: scale(1.6);
+        }

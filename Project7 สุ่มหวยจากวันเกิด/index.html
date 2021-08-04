@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random-Lotto</title>
+</head>
+<body>
+    <img src="img/bg.svg" alt="" class="bg">
+    <h1 class="heading">งวดนี้ซื้อหวยตัวไหนดี</h1>
+    <div class="contentBx" id="contentBx">
+        <h3 class="header">ทำนายหวยตามวันเกิด <span>(ทดสอบ)</span></h3>
+        <div class="formBx">
+            <label>ใส่วันเกิดของคุณ</label> <br>
+            <input type="text" name="brightday" id="brightday" value='' placeholder="25/02/2563">
+        </div>
+        <div class="formBx top">
+            <label>ใส่เลขที่คุณชอบ<span>(2หลัก)</span></label><br>
+            <input type="text" name="number" id="number" value='' placeholder="99">
+        </div>
+        <input type="submit" class="submit" value="ทำนาย" onClick="removeElement(),brightday_input (),number_input (),random_lotto ();">
+        <h2 id="test"></h2>
+    </div>
+
+            <!-- Content 2 -->
+
+    <div class="contentBx2" id="contentBx2">
+        <h3 class="header2">ทำนายหวยตามวันเกิด <span>(ทดสอบ)</span></h3>
+        <div class="formBx2">
+            <div class="box">
+                <p class="text">วันเกิดของคุณ</p>
+                <h5 id="bright_output" class="output"></h5>
+            </div>
+            <div class="box top">
+                <p class="text">เลขที่คุณชอบ</p>
+                <h5 id="number_output" class="output"></h5>
+            </div>
+            
+            <div class="content_output">
+                <div class="output_lotto">
+                    <p class="text">เลขท้าย 3 ตัว #1</p>
+                    <h3 id="result1" class="output_shot"></h3>
+                </div>
+
+                <div class="output_lotto2">
+                    <p class="text">เลขล็อตเตอร์รี่ 6 ตัว #1</p>
+                    <h3 id="result2" class="output_long"></h3>
+                </div>
+            </div>
+
+            <div class="content_output2">
+                <div class="output_lotto">
+                    <p class="text">เลขท้าย 3 ตัว #2</p>
+                    <h3 id="result3" class="output_shot"></h3>
+                </div>
+
+                <div class="output_lotto2">
+                    <p class="text">เลขล็อตเตอร์รี่ 6 ตัว #2</p>
+                    <h3 id="result4" class="output_long"></h3>
+                </div>
+            </div>
+        </div>
+        <input type="button" class="submit2" value="ตรวจหวย" onClick="link ();" formtarget="_blank">
+    </div>
+        
+        <script src="script.js"></script>       
+</body>
+</html>

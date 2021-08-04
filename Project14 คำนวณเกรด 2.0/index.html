@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">โปรแกรมคำนวณเกรด 2.0</h2>
+        <div class="form" id="form">
+            <div class="form_score1">
+                <label class="label">คะแนนเก็บทั้งหมด</label>
+                <input type="number" class="_input" placeholder="กรอกคะแนน" id="scoreP">
+            </div>
+            <div class="form_score1">
+                <label class="label">คะแนนสอบปลายภาค</label>
+                <input type="number" class="_input" placeholder="กรอกคะแนน" id="scoreM">
+            </div>
+            <button class="sum_button" id="sum_button">คำนวณ</button>
+            <button class="clear_button" id="clear_button">Clear</button>
+            <div class="result_totle">
+                <label class="label_result">คะแนนรวม : </label>
+                <h3 class="result" id="total_result"></h3>
+            </div>
+            <div class="result_grade">
+                <label class="label_grade">เกรด : </label>
+                <h3 class="result" id="grade_result"></h3>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

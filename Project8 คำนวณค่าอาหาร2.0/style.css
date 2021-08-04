@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.bg_image {
+    position: absolute;
+    top: -180px;
+    left: 0;
+    width: 100%;
+    height: 130vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main_header {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 5px;
+}
+
+/* ContentBx */
+.contentBx {
+    margin: 0 auto;
+    width: 300px;
+    background-color: #F8F8F8;
+}
+.contentBx .top_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    background-color: #B2D348;
+}
+.contentBx .top_header .header {
+    font-size: 17px;
+    font-weight: 400;
+    color: #F8F8F8;
+}
+
+/* Form Main */
+.contentBx .form {
+    margin: 10px 30px;
+}
+.contentBx .form.two,
+.contentBx .form.three,
+.contentBx .form.four {
+    display: none;
+}
+
+.contentBx .user_name {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #3870C6;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+.contentBx .text {
+    font-size: 15px;
+    text-align: center;
+    color: #3870C6;
+    margin-bottom: 10px;
+}
+
+.contentBx .text.top {
+    margin-top: 22px;
+}
+.contentBx .input_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentBx .input_form .list_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contentBx .input_form .list_input .input_price {
+    margin-bottom: 5px;
+}
+
+.contentBx .input_form .list_input .input_price::placeholder {
+    position: relative;
+    left: -10px;
+    bottom: -5px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+
+input {
+    width: 200px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #959595;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+.contentBx .input_form.three input {
+    width: 150px;
+}
+
+.contentBx .form.four .text {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #959595;
+    margin-bottom: -5px;
+}
+
+.contentBx .output_form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contentBx .output_form .output {
+
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #3870C6;
+    margin-left: 30px;
+}
+
+.contentBx .output_form .text_foot {
+    color: #959595;
+    font-size: 12px;
+    margin: 20px 0 0 5px;
+}
+.contentBx .output_form .text_foot.two {
+    font-size: 15px;
+    margin-top: 16px;
+}
+
+.contentBx .submit {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #B2D348;
+    color: #fff;
+    font-size: 16px;
+    margin: 40px 0 20px;
+}
+.contentBx .submit.top {
+    margin-top: 30px;
+}
+.contentBx .submit.bottom {
+    width: 90px;
+    position: relative;
+    left: 0;
+    margin-top: 5px;
+}

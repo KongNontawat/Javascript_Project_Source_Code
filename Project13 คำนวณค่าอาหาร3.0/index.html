@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="border_top"></div>
+        <div class="box_content">
+            <h2 class="title">โปรแกรมคำนวณค่าอาหาร 3.0</h2>
+            <div class="form">
+                <div class="form_box">
+                    <p class="label_quantity">จำนวนอาหาร</p>
+                    <input type="number" class="input_quantity" id="input_quantity" autofocus="autofocus">
+                </div>
+                <div class="form_box">
+                    <p class="label_price">ราคาอาหาร</p>
+                    <input type="number" class="input_price" id="input_price">
+                </div>
+            </div>
+            <button class="btn" id="button">คำนวณ</button>
+
+            <div class="form form2" id="form2">
+                <div class="form_box_sum">
+                    <p class="label_sum">ค่าอาหารทั้งหมด : </p>
+                    <h2 class="result_sum" id="result_sum"></h2>
+                </div>
+                    <div class="form_box">
+                        <p class="label_money">เงินที่จ่าย</p>
+                        <input type="number" class="input_money" id="input_money">
+                    </div>
+                    <div class="form_box_change">
+                        <p class="label_change">เงินทอน : </p>
+                        <h2 class="result_change" id="result_change"></h2>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

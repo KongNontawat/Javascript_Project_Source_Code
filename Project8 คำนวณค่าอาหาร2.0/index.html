@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>บวกค่าอาหาร Ver.2</title>
+</head>
+<body>
+    <!-- Bg -->
+    <div class="bg">
+        <img src="img/bg.svg" alt="" class="bg_image">
+    </div>
+    <!-- Main_Header -->
+    <h1 class="main_header">บวกค่าอาหาร</h1>
+    <!-- ContentBx -->
+    <div class="contentBx">
+        <div class="top_header">
+            <h3 class="header">โปรแกรมคำนวณค่าอาหาร</h3>
+        </div>
+        <div class="form one" id="page1">
+            <p class="text top">กรุณาใส่ชื่อของคุณ</p>
+            <div class="input_form">
+                <input type="text" id="input_username" class="input_username" autofocus="autofocus">
+            </div> <!--input_form-->
+            <input type="submit" value="ตกลง" class="submit" onclick="out_user_name(),page2();">
+        </div> <!--form one-->
+
+        <div class="form two" id="page2">
+            <h3 class="user_name" id="user_name1"></h3>
+            <p class="text">ใส่จำนวนอาหารที่สั่ง</p>
+            <div class="input_form">
+                <input type="text" id="input_listnumber" class="input_listnumber" autofocus="autofocus">
+            </div> <!--input_form-->
+            <input type="submit" value="ตกลง" class="submit" onclick="add_input(),page3();">
+        </div> <!--form two-->
+
+        <div class="form three" id="page3">
+            <h3 class="user_name" id="user_name2"></h3>
+            <p class="text">ใส่ราคาอาหารที่สั่ง</p>
+            <div class="input_form three">
+                <div class="list_input" id="list_input">
+                </div>
+            </div> <!--input_form-->
+            <input type="submit" value="ตกลง" class="submit top" onclick="output(),output_sum(),page4();">
+        </div> <!--form three-->
+        
+        <div class="form four" id="page4">
+            <h3 class="user_name" id="user_name3"></h3>
+            <p class="text">จำนวนอาหาร</p>
+            <div class="output_form">
+                <h2 class="output" id="output_listnumber"></h2>
+                <p class="text_foot">รายการ</p>
+            </div> <!--output_form-->
+            <p class="text">ราคาอาหารทั้งหมด</p>
+            <div class="output_form two">
+                <h2 class="output" id="output_sum_price"></h2>
+                <p class="text_foot two">บาท</p>
+            </div> <!--output_form-->
+            <input type="submit" value="รีเฟรช" class="submit bottom" onclick="refresh();">
+        </div> <!--form four-->
+
+    </div> <!--contentBx -->
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+:root {
+    --main-color: #67DFD5;
+    --header-color: #5b5b5b;
+    --label-color: #757575;
+    --placeholder-color: #f2f2f2;
+    --border-color: #e5e5e5;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.heading {
+    color: #fff;
+    font-size: 37px;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px 0 20px 0;
+    text-shadow: 1px 1px 4px #0000002d;
+}
+
+.contentBx {
+    display: block;
+    margin: auto;
+    width: 330px;
+    background-color: #fff;
+    padding: 25px 30px;
+    box-shadow: 1px 1px 10px 0px #0000002c;
+    
+}
+
+.contentBx .header {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: var(--header-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.contentBx .header span {
+    font-size: 12px;
+}
+.contentBx2 .header2 span {
+    font-size: 12px;
+}
+
+.contentBx .formBx {
+    margin-top: 35px;
+}
+
+.contentBx .formBx.top {
+    margin-top: 40px;
+}
+
+.contentBx .formBx label {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: var(--label-color);
+}
+
+.contentBx .formBx label span {
+    font-size: 12px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    color: #929292;
+}
+
+.contentBx .formBx input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    margin-top: 7px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding: 0 15px;
+    color: var(--header-color);
+}
+
+.contentBx .formBx input::placeholder {
+    color: var(--placeholder-color);
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+.contentBx .submit {
+    width: 100%;
+    height: 40px;
+    background-color: var(--main-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 45px 0 10px;
+}
+
+/* Content 2 */
+
+.contentBx2 {
+    display: none;
+    margin: auto;
+    width: 330px;
+    background-color: #fff;
+    padding: 25px 30px;
+    box-shadow: 1px 1px 10px 0px #0000002c;
+}
+
+.contentBx2 .header2 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: var(--header-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.contentBx2 .formBx2 {
+    margin-top: 20px;
+}
+
+.contentBx2 .formBx2 .box {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    padding: 1px 10px;
+}
+
+.contentBx2 .formBx2 .box.top {
+    margin-top: 20px;
+}
+
+.contentBx2 .formBx2 .box .text {
+    font-size: 12px;
+    color: #afafaf;
+}
+
+.contentBx2 .formBx2 .box .output {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: var(--header-color);
+}
+
+.contentBx2 .content_output {
+    display: flex;
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+.contentBx2 .content_output2 {
+    display: flex;
+    margin-top: 15px;
+}
+
+.contentBx2 .formBx2 .output_lotto {
+    margin-right: 20px;
+    
+}
+
+.contentBx2 .formBx2 .output_lotto .text,.output_lotto2 .text  {
+    font-size: 13px;
+    color: var(--label-color);
+    letter-spacing: -0.4;
+    
+}
+
+.contentBx2 .formBx2 .output_lotto .output_shot {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-align: center;
+    padding: 2px 15px 7px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid var(--border-color);
+}
+
+.contentBx2 .formBx2 .output_lotto2 .output_long {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-align: center;
+    padding: 2px 15px 7px;
+    width: 140px;
+    height: 40px;
+    border: 1px solid var(--border-color);
+}
+
+.contentBx2 .submit2 {
+    width: 100%;
+    height: 40px;
+    background-color: var(--main-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 30px 0 10px;
+}

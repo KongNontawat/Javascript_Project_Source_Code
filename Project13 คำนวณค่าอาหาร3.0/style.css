@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+:root {
+    --yallow: #F5B91A;
+    --white: #fff;
+    --grey: #F2F2F2;
+    --font_color_main: #333;
+    --font_color: #555;
+    --border_color: #CECECE;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+.container {
+    width: 450px;
+    margin: 40px auto 0;
+}
+
+.border_top {
+    width: 450px;
+    height: 8px;
+    background-color: var(--yallow);
+}
+
+.box_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: var(--white);
+}
+
+.box_content .title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box_content .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box_content .form .form_box {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+}
+
+.box_content .form .label_quantity,
+.box_content .form .label_price,
+.box_content .form .label_money {
+    margin-right: 15px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.box_content .form input {
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    outline: none;
+    border: 2px solid var(--border_color);
+    padding-left: 5px;
+}
+
+.box_content .btn {
+    font-size: 18px;
+    width: 90%;
+    height: 35px;
+    color: var(--white);
+    background-color: var(--yallow);
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+}
+
+.box_content .form.form2 {
+    display: none;
+}
+
+.box_content .form.form2 .form_box_sum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box_content .form.form2 .label_sum {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.box_content .form.form2 .result_sum {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--font_color_main);
+}
+
+.box_content .form.form2 .form_box_change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_content .form.form2 .form_box_change .label_change {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.box_content .form.form2 .form_box_change .result_change {
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--font_color_main);
+}

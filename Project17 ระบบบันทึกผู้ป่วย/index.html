@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link Style Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /> <!-- CDN Font Awesome -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script> <!-- SweetAlert2 -->
+    <title>ระบบบันทึกประวัติผู้ป่วย</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="content_information" id="window_content">
+
+                <div class="main_title header" id="">
+                    <p><img src="Image/book.png"> บันทึกประวัติผู้ป่วย - <span>Patient Information</span></p>
+                    <div class="btn_cont">
+                        <button type="button" class="btn btn_mini" id="btn_mini"><img src="Image/dash.png"></button>
+                        <button type="button" class="btn btn_max" id="btn_max"><img src="Image/square.png"></button>
+                        <button type="button" class="btn btn_close" id="btn_close"><img src="Image/close.png"></button>
+                    </div>
+                </div>
+                <nav class="menu_bar">
+                    <ul>
+                        <li><a href="#!">File</a></li>
+                        <li><a href="#!">Edit</a></li>
+                        <li><a href="#!">View</a></li>
+                        <li><a href="#!">Option</a></li>
+                        <li><a href="#!">Info</a></li>
+                        <li><a href="#!">Help</a></li>
+                    </ul>
+                </nav>
+                
+                <form class="form_main">
+                    <h2 class="title_sub fontTH">ประวัติผู้ป่วย - <span>Patient Information</span></h2>
+                    <div class="form_box form_box_id">
+                        <label for="form_ID" class="label label_ID">ID - HN</label>
+                        <div class="input_box">
+                            <input type="text" id="form_ID" class="form_input_di">
+                        </div>
+                    </div>
+                    <div class="form_box form_box_name">
+                        <label for="form_name" class="label label_name fontTH" >ชื่อ - นามสกุล</label>
+                        <div class="input_box">
+                            <input type="text" id="form_name" class="form_input_di" autofocus placeholder="ชื่อ - นามสกุล">
+                        </div>
+                    </div>
+                    <div class="form_box form_box_Bdate">
+                        <label for="form_Bdate" class="label label_Bdate fontTH">วันเดือนปีเกิด</label>
+                        <div class="input_box">
+                            <input type="text" id="form_Bdate" class="form_input_di" placeholder="วัน/เดือน/ปี">
+                        </div>
+                    </div>
+                    <div class="form_box form_box_age">
+                        <label for="form_age" class="label label_age fontTH">อายุ</label>
+                        <div class="input_box">
+                            <input type="text" id="form_age" class="form_input_di" placeholder="XX">
+                        <label for="" class="label label_y fontTH" style="margin-left: 7px;">ปี</label>
+                        </div>
+                    </div>
+                    <div class="form_box form_box_sex">
+                        <label for="" class="label label_sex fontTH">เพศ</label>
+                        <div class="box_radio">
+                            <div class="input_box">
+                                <input type="radio" id="form_gender_male" class="form_input_di" name="gender" value="male">
+                                <label for="" class="label label_male fontTH">ชาย</label>
+                                <input type="radio" id="form_gender_female" class="form_input_di" name="gender" value="female">
+                                <label for="" class="label label_female fontTH">หญิง</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_box form_box_blood">
+                        <label for="blood_select" class="label label_blood fontTH">กรู๊ปเลือด</label>
+                        <div class="input_box">
+                            <select name="blood_select" id="blood_select" class="form_input_di">
+                                <option value="A" id="blood_a">A</option>
+                                <option value="B" id="blood_b">B</option>
+                                <option value="AB" id="blood_ab">AB</option>
+                                <option value="O" id="blood_o">O</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_box form_box_address">
+                        <label for="form_address" class="label label_address fontTH">ที่อยู่</label>
+                        <div class="input_box">
+                            <textarea id="form_address" cols="60" rows="4" class="form_input_di" placeholder="ที่อยู่ - บ้านเลขที่ หมู่ ซอย ถนน"></textarea>
+                        </div>
+                    </div>
+                    <div class="form_box form_box_canton">
+                        <label for="form_canton" class="label label_canton fontTH">ตำบล</label>
+                        <div class="input_box">
+                            <input type="text" id="form_canton" class="form_input_di" placeholder="ตำบล">
+                        </div>
+                    </div>
+                    <div class="form_box form_box_district">
+                        <label for="form_district" class="label label_district fontTH">อำเภอ</label>
+                        <div class="input_box">
+                            <input type="text" id="form_district" class="form_input_di" placeholder="อำเภอ">
+                        </div>
+                    </div>
+                    <div class="form_box form_box_city">
+                        <label for="form_province" class="label label_city fontTH">จังหวัด</label>
+                        <div class="input_box">
+                            <input type="text" id="form_province" class="form_input_di" placeholder="จังหวัด">
+                        </div>
+                    </div>
+                    <div class="form_box form_box_post_id">
+                        <label for="form_postID" class="label label_post_id fontTH">รหัสไปรษณีย์</label>
+                        <div class="input_box">
+                            <input type="text" id="form_postID" class="form_input_di" placeholder="XXXXX">
+                        </div>
+                    </div>
+                    <div class="form_box form_box_phone">
+                        <label for="form_phone" class="label label_phone fontTH">เบอร์โทรศัพท์</label>
+                        <div class="input_box">
+                            <input type="text" id="form_phone" class="form_input_di" placeholder="เบอร์โทร">
+                        </div>
+                    </div>
+
+                    <div class="form_box2 form_box_button">
+                        <button type="button" class="button btn_add" id="btn_add"><img src="Image/plus.png"><span>เพิ่มข้อมูล</span></button>
+                        <button type="button" class="button btn_submit" id="btn_submit"><img src="Image/save.png"><span>บันทึกข้อมูล</span></button>
+                        <button type="button" class="button btn_cancel" id="btn_cancel"><img src="Image/cancel.png"><span>ยกเลิก</span></button>
+                        <button type="button" class="button btn_refresh" id="btn_refresh"><img src="Image/refresh.png"><span>รีเฟรชข้อมูล</span></button>
+                    </div>
+
+                    <section class="info_list">
+                        <table class="fontTH">
+                            <thead>
+                                <tr>
+                                    <th>ID - HN</th>
+                                    <th>ชื่อ - นามสกุล</th>
+                                    <th>ที่อยู่</th>
+                                    <th>เบอร์โทร</th>
+                                    <th>กรุ๊ป <br> เลือด</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                <!-- <tr id="tr_body">
+                                    <td id="td_ID">HN 123456</td>
+                                    <td id="td_Name">นายนนทวัฒน์  แสงความสว่าง</td>
+                                    <td id="td_address">527/24 ถ.วิทยะธำรงค์ ซ.9</td>
+                                    <td id="td_phone">064 487 0915</td>
+                                    <td id="td_blood">A</td>
+                                </tr>
+                                <tr>
+                                    <td>HN 223456</td>
+                                    <td>นายนนทวัฒน์  แสงความสว่าง</td>
+                                    <td>527/24 ถ.วิทยะธำรงค์ ซ.9 527/24 ถ.วิทยะธำรงค์ ซ.9 </td>
+                                    <td>064 487 0915</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <td>HN 323456</td>
+                                    <td>นายนนทวัฒน์  แสงความสว่าง</td>
+                                    <td>527/24 ถ.วิทยะธำรงค์ ซ.9</td>
+                                    <td>064 487 0915</td>
+                                    <td>C</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </section>
+                </form>
+                <div class="status_bar">
+                    <div class="box_left">
+                        <div class="icon">
+                            <button class="icon_img"><img src="Image/foot_icon01.png"></button>
+                            <button class="icon_img"><img src="Image/foot_icon02.png"></button>
+                            <button class="icon_img"><img src="Image/foot_icon03.png"></button>
+                            <button class="icon_img"><img src="Image/foot_icon04.png"></button>
+                            <button class="icon_img"><img src="Image/foot_icon05.png"></button>
+                        </div>
+                    </div>
+                    <div class="box_mid">
+                        <img src="Image/foot_icon06.png">
+                        <input type="text" id="input_search" placeholder="Search...">
+                    </div>
+                    <div class="box_right">
+                        <p>version : alpha 1.0.A - DEMO</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

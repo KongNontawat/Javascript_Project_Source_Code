@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>To Do List</title>
+</head>
+<body>
+    <main>
+        <div class="todo_list_content">
+            <div class="container">
+                <h1 class="title_main"><i class="fas fa-check-square"></i>To - Do - List</h1>
+                <input autofocus type="text" focus placeholder="Input Your Task" id="input_text"> <br>
+                <button onclick="new_task_fn02()" type="button" class="btn_new_task" id="btn_new_task"><i class="fas fa-plus"></i>Add task</button>
+
+                <div class="task_area" id="task_area">
+                    <ul id="task_list">
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
